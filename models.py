@@ -5,16 +5,6 @@ from flask import session
 import os
 import requests
 
-# set up authentication parameters
-#authenticate("localhost:7474", "neo4j", "neo4j")
-#graph = Graph("http://localhost:7474/db/data/")
-
-#authenticate("127.0.0.1:7474", "neo4j", "neo4j") #Local neo4j
-#graph = Graph("http://127.0.0.1:7474/db/data/") #Local neo4j
-
-#Access to Google Compute Engine hosting neo4j
-# graph = Graph("bolt://34.83.30.187:7687", auth=("neo4j","rx2u-neo4j"), bolt=True, secure = True, http_port = 24789, https_port = 24780)
-
 class User:
     def placeOrder(userinfo):
         user = {
